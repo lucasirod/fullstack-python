@@ -1,0 +1,58 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    --text-primary: #030202;
+    --text-secondary: #000000;
+    --bg-primary: rgb(233, 204, 178);
+    --bg-secondary: rgb(255, 255, 255);
+    --bg-third: rgb(209, 198, 188);
+    --lines: rgb(33,33,38);
+    --transition-speed: 300ms;
+    --highlight-color: #e89862;
+    --complementary-color: #62B2E8;
+}
+
+body{
+    color: rgb(8, 4, 4);
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main{
+    margin-left: 5rem;
+}
+
+footer{
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center; 
+    font-size: 10px;
+    background-color: rgb(236, 205, 153);
+}
+
+.gridInicio{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.sobreNosotros{
+    text-align: center;
+    grid-area: 1 / 1 / span 1 / span 3;
+    background-color: var(--bg-primary);
+    color: var(--color-text);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mision,
+.vision,
+.metas{
+    background-color: var(--bg-third);
+    color: var(--color-text);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
