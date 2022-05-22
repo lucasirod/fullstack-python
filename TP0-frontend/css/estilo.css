@@ -35,6 +35,8 @@ footer{
     background-color: rgb(236, 205, 153);
 }
 
+/*------------------------------------*/
+
 .gridInicio{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -53,6 +55,46 @@ footer{
 .vision,
 .metas{
     background-color: var(--bg-third);
+    color: var(--color-text);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*------------------------------------*/
+
+
+.gridContacto{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.gridFormulario{
+    background-color: var(--bg-third);
+    color: var(--color-text);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+}
+
+#formTipo{
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+#formConsulta{
+    grid-area: 4 / 1 / span 1 / span 2;
+}
+
+#formEnviar{
+    align-items: center;
+}
+
+.gridUbicacion{
+    background-color: var(--bg-primary);
     color: var(--color-text);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
