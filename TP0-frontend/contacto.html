@@ -30,28 +30,61 @@
     <div class="gridContacto">
         <div class="gridFormulario">
             <h2 style="text-align: center">Contactanos!</h2>
-                <form class="formulario">
-                    <div class="mb-3" id="formNombre"><br>
+                <form class="formulario" id="formulario">
+                    
+                    <div class="form-group" id="formUsuario"><br>
+                        <label for="txtUsuario" class="form-label">Usuario</label><br>
+                        <div class="form-input-icono">
+                            <input type="text" name="txtUsuario" id="txtUsuario" placeholder="tuUsuario" class="form-input">
+                            <i class="form-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+
+                    <div class="form-group" id="formPassword"><br>
+                        <label for="txtPassword" class="form-label">Contraseña</label><br>
+                        <div class="form-input-icono">
+                            <input type="password" name="txtPassword" id="txtPassword" placeholder="tuContraseña" class="form-input">
+                            <i class="form-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">La contraseña tiene que tener de 4 a 12 digitos</p>
+                    </div>                    
+
+                    <div class="form-group" id="formNombre"><br>
                         <label for="txtNombre" class="form-label">Nombre</label><br>
                         <input type="text" name="txtNombre" id="txtNombre" placeholder="tuNombre" class="form-control">
                     </div>
-    
-                    <div class="mb-3" id="formApellido"><br>
+
+                    <div class="form-group" id="formApellido"><br>
                         <label for="txtApellido" class="form-label">Apellido</label><br>
                         <input type="text" name="txtApellido" id="txtApellido" placeholder="tuApellido" class="form-control">
                     </div>
     
-                    <div class="mb-3" id="formMail"><br>
-                        <label for="mail" class="form-label">E-mail</label><br>
-                        <input type="email" name="mail" id="mail" placeholder="ejemplo@ejemplo.com" class="form-control">
+                    <div class="form-group" id="formMail"><br>
+                        <label for="txtMail" class="form-label">Repetir e-mail</label><br>
+                        <div class="form-input-icono">
+                            <input type="email" name="txtMail" id="txtMail" placeholder="ejemplo@ejemplo.com" class="form-input">
+                            <i class="form-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">Los emails deben coincidir</p>
                     </div>
-    
-                    <div class="mb-3" id="formTelefono"><br>
+
+                    <div class="form-group" id="formMail2"><br>
+                        <label for="txtMail2" class="form-label">Repetir e-mail</label><br>
+                        <div class="form-input-icono">
+                            <input type="email" name="txtMail2" id="txtMail2" placeholder="ejemplo@ejemplo.com" class="form-input">
+                            <i class="form-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">Los emails deben coincidir</p>
+                    </div>    
+
+
+                    <div class="form-group" id="formTelefono"><br>
                         <label for="numTel" class="form-label">Teléfono</label><br>
                         <input  name="numTel" id="numTel" class="form-control">
                     </div>
     
-                    <div class="mb-3" id="formTipo"><br>
+                    <div class="form-group" id="formTipo"><br>
                         <label for="radioTipo" class="form-label">Tipo de consulta</label><br>
                         <select class="form-select" >
                             <option selected>Consulta de Stock</option>
@@ -60,17 +93,35 @@
                           </select>
                     </div>
     
-                    <div class="mb-3" id="formConsulta"><br>
+                    <div class="form-group" id="formConsulta"><br>
                         <label for="areaConsulta" class="form-label">Consulta:</label><br>
                         <textarea class="form-control" id="areaConsulta" cols="60" rows="5"></textarea>
                     </div>
     
-                    <input class="btn btn-primary center" type="submit" value="Enviar" id="formEnviar">                
+                    <div class="form-group" id="formTerminos">
+                        <label class="form-label">
+                            <input class="formCheckbox" type="checkbox" name="terminos" id="terminos">
+                            Quiero enterarme de las ultimas ofertas mensualmente en mi correo electrónico
+                        </label>
+                    </div>
+        
+                    <div class="formMensaje" id="formMensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="form-group form-btn-enviar">
+                        <button type="submit" class="form-btn">Enviar</button>
+                        <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>              
                 </form>
         </div>
         <div class="gridUbicacion">
             <h2 style="text-align: center">¿Donde estamos?</h2>
-                    <iframe width="500"  height="500" allowfullscreen="" loading="lazy" src="https://maps.google.com/maps?q=parque%20industrial%20general%20savio&t=&z=13&ie=UTF8&iwloc=&output=embed"> </iframe>
+                    <iframe class="map"
+                    width=100%
+                    height="500"
+                    align-items="center"  
+                    src="https://maps.google.com/maps?q=parque%20industrial%20general%20savio&t=&z=13&ie=UTF8&iwloc=&output=embed"> </iframe>
         </div>
     </div>
     <footer id="#info">
@@ -78,6 +129,7 @@
         <p>github @lucasirod</p>
     </footer> 
 </body>
-
+<script src="./js/formulario.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </html>
