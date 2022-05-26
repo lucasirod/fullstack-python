@@ -103,5 +103,8 @@ formulario.addEventListener('submit', (e) => {
 	} else {
         console.log(`FALTAN CAMPOS`)
 		document.getElementById('formMensaje').classList.add('formMensaje-activo');
+        setTimeout(() => {
+			document.getElementById('formMensaje').classList.remove('formMensaje-activo');
+		}, 5000);
 	}
 });

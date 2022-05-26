@@ -67,6 +67,10 @@ footer{
     grid-template-columns: 50% 50%;   
 }
 
+.gridContacto{
+    background-color: var(--bg-primary);  
+}
+
 
 .formulario{
     display: grid;
@@ -92,7 +96,7 @@ footer{
 .form-control,
 .form-select,
 .form-input {
-	width: 90%;
+	width: 80%;
 	background: rgb(255, 255, 255);
 	border: 3px solid transparent;
 	border-radius: 3px;
@@ -119,7 +123,6 @@ footer{
 }
 
 .form-validacion-estado {
-	position: absolute;
 	right: 10px;
 	bottom: 15px;
 	z-index: 100;
