@@ -53,7 +53,7 @@ const validarEmail = () => {
 	const inputMail2 = document.getElementById('txtMail2');
     console.log(`Comparando ${inputMail1.value} con ${inputMail2.value}`);
 
-	if(inputMail1.value !== inputMail2.value){
+	if(inputMail1.value !== inputMail2.value || !inputMail1.value || !inputMail2.value){
 		document.getElementById(`formMail`).classList.add('form-grupo-incorrecto');
 		document.getElementById(`formMail`).classList.remove('form-grupo-correcto');
 		document.querySelector(`#formMail i`).classList.add('fa-times-circle');

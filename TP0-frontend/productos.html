@@ -8,21 +8,40 @@
 
     <!--Iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Fuente-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+    <!--Animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Estilos-->
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/productos.css">
 </head>
 <body>
 
    
-    <header align="center">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AAACdnZ3f39/8/Pzy8vLT09Pr6+tJSUni4uLn5+f19fV4eHjb29tNTU29vb1wcHCurq4dHR2Ojo4+Pj6Xl5fOzs4NDQ1ZWVk5OTlxcXGFhYUTExOoqKgtLS19fX0hISHDw8NoaGgnJydgYGBVVVW2trYrKyuSkpI0NDQYGBg8PDxPlORPAAAKh0lEQVR4nO2d63qiOhSGCYSTCIhyUkQFlapz//e3E0ICSNppHdpQdt5nfpSM2HwkWWtlJaGKIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUTya3D9JwoNiq7TuGzAgP0yFl2rMVHv4ZlK24ZheK9/Sl3R9RoNCKGiUoUuvtRW9c+56JqNCVOokeusvtgo8xmPzwoVq766Ca3UqAwUxuSyElqrMRkobBoRmCJrNSZDhQG5LkXWakyGCs2moJiJtRkqVDxSEAqs1ZhwFN6akpkENxyFBZjVSOQodGnRPMwpR6FzaooCgfUaD45CamrARVy1RoSncNkUPRxx9RoPnsKIls3CmvIUBrRMFVev8eAppO4CrMTVazx4Cg1atp1D3MZTaNOyWXhEnkIdcAp/LTyFkCmcgzHlKVQSWjiHmT5X4WNO7uJjhRth9RoPrsI1LTwKq9d4fKxwKaxe4/Gxwp2weo2HVPj7+b8rnK2lefx/FM7WH7K4NBNWr/HgKqRl843amMJIWL3Gg6fQYQrnsKDPU2gyhb64io0GT6HGFL4wx8+nlhfgKYwBp/CTOJNbdxwqhErBFH491waTqaWveG1Y0bKT/uXvg4epLVnxFOa0zPr6Uj5SOLFMOU9hRstemFoghdvxajcGPIUXWqa+0IZvIJnWWgBPYfgPzgJHC9NaduQohHSVO/m6oakVvnDbN/LRToXrC99n/IY2ZO7w6xlvWNvhySvMhkWfB928nrylaTYngvSVjW0W9qKT4lkhbNdHixe+DhuaiSV3hm1IS7xXvq54afh+KwOFKCh52RmS8w2vtP03MlBIg9LXEhjh5NzhQCEdha9ku2E9d36pd38jTKFdX8bNCZOX0oiw7qSTykAakcqi7ExV1ai5Wr+Yn6nH8KSyGKwBe1iB8+IWbx/dfZqUv/fLVZ/lMSrsV7/NUV/u37+DZkejIboe30ds432p90l10hFBuhb1xts5ZMn5wMZqTczdj4d7B/d525kgI4czXzbEEweadlGC6U2cxmNFgwVzJqfBMLD9wYHQDaw5jkIi0jSCbenjmS9I5rBpusWNFbcikuyMpHbm5AtJ8zlLYEW+Zrr+FQuc2sLhv+Gr9fslDDb5mtq0iQD1L6RUCivvHjrZgrddsUDDUC1Dsgowyd1F9uFQfTZBjed+26gVGWMHeEp3t9uuzgtYE/UTKkjUT4aSToVP7VmqS6WYath20WTxbXX8R3QUMWc41nq3CTr/4e6wmG0WUzlmTnOPE0sh9tAzAC7xOwK1ot/Ci4ikqt5KNa/yzKJ7/G5TDGaMjA4qE2k8bbjrMNoqCTfVojNYoZ8OUzsTDWaM1KJ2ZpHVQ4w3lnQ8/E7lJjAWetNOi80h6QmcpBmtiS1QFkSkGWGbH6pGraLf5RbUpJzD626VeuH2sP8dApGO4gL2x7gW6ZDo+ZBVw/ASGpEF3iMTOwahbmpxFSAqv4htU3/2fxpOr+xIS7pHUmcrq9yBDzH9NOEJFLhByNH8zDs81+oUpku1cM3muUPcQbcA7C+562CnR+1IEiJvHqCnYriGEftBtLyEj2d16GOxqBY0g/I8rE+H+zUL4qahYB2ggLdLjjqsqW4/vLFHaIsRqOf1qDlfj2pVGKhnOo4d5ztOG5zTrLJxD9WDa6N8lfvVhtdcHAQthrp4ZG2Pvk3MoqNANyrD89ZLV0vM8bhLrbdO711fs0rTUbNfqYk8WX8S7qDrYQl47RnEXg4AL+/kvIzbMYo1Zh9124iLKj9en0fotowKP9h4fDVD9mIa0EYDKus/WpOK0wt1GRJZp0N4vayOu9Wx7Atd/0lXZXrd7p+aMNnvnwoiMbnfG4oQuckSO1/VMfKh3KjqLdt5nnV4oFonvM6ICh9v5z1I1ufDHb+Lb/t2vm+7IzO5idHn3gF+ss/GDRbLMxlsKGCp1DwoDM3fWfuhtE9y+fSkcmQqUHICSy1bA2vj252HvohIFLa2VlkUqXmuRresDD8p+SYsr50lwzma41/PR7/Xb50Ku4X7MY/NbkvY6uX0F2kJSLJ9nY0R4gKdSzoYGtDP8p7VgfWENymrfjOY/vLwrq59Pf5OyzxLgK+KSzc53vCIEoTPRgfma7Dyn0oLkpP/Uy6zKPdjwzBQbEDtz37/WAPwQIalAmfDFZhP0//2q3HHKs4DS+sEb8h9bpDDJz0PGnlJ2zO5H4j9jBxlcQUbRwmnfYZmcX3kTzbQiZJTxvIUZpHR1NLZyoL8iMSHVxC6iqOeN8iIxRPbsfZEgBuhBwzeSpqfcWK1DL3LLlNRP3WRGh25Vi9yzb2H7rIL/DE4wVRMi1Omg0jAjlgRNLSuO1GcDJQ+LijTbormO2v4j5jeV1ZNHDVsYrL4Pq0dze/jfGXdyzkyg6LOddVaIpFIvospu7setmajf095+Spvd0Xq+ANax8E7mkbc3sK2G/cA8Weaj5ia1v88VGCcdxal8Bf+pFvBiyxl2ssT5SBMwYU6b/+OZhJpYrFg3b2SQ1z41azHZg9JimZMzUOp0OzC88ClXZxabEHZWTLEp2qPP9kDPADwXwRod9sXIITKsV1AUXEqvujsDtHINgN87oyGBm5nwWWF/65A3m6OhRZS53Z2QF1/+P2DFt4DCZN2QSHEWlxcTUKtUEGtRJIeEP8fft8sbn2aBzHYJjWIFRoK3IM/jaAK3FEUfkUfaAo8EQqVC9uu69ZPX0/YQi1RmLWNiE8cIvl4U8VQoUIUKlv2iK71a6IzcKL9XozCiG1wyetNkfAMwp7CW/vqEqywVMzQ+otCEq86uAPXJw3pSBajsGJrzxdcb6gcwLoxf0whPflTnxq1gyz9lMKYfHPQ9gExCgv2LucDqfed7W9lvZSO1FphVsbXvygkpqZ5du0jFKQQVZEcjHfWpN7tOCIKl63p0QBezNk73gcKUS9vNnGrpHtX7eEoMQpRu5zrYafvmcLG3NcK4QOk9A4XuAk+kvXRONSYoA1TSN9LL0zho1ZoJkxhYxmQwkhbgS1b3XQB3OFR9X4b+nEIwkZFxhTSV5oLU7h+Vti2obdaIztD4xAXOLW7fF9huryxECabThv2e+m9q7BS7KT9czkuuiFFLf6+wm7q/DYRhcim38n1mSl8z9KgNlTinfKBwu5pppwppJ8Qo9BnpzlDpnDx5PFbf4iTop9V6DOFNGIQozBgnWhF6n1gURZRGLX+zG1eg/A5hQbZJBS0/tQjUfjmp86tEYUq2ykRkKjthNq024ZRO3v4mkKF3Ki2pY3C809twaSRNx1mZG6kA2Y8/1XhBbkJiEzqWz/ydn5sk2mt0GHeCqJ50q2uMp2HE4Xqq70UBYQPB8+esv7sKf6xtbda4Qac2ZK3Ae46euRshTGqFRZt1MVRGAM6/YNK+Xwy9IK8jQYezLpYWKEW/pTC5T5JrPB+65xBKk4nC2T0sjolSajjboZsES5073gJDbnyR0I7rhkmybrpdOp6vw+7OwSgswJeEjIfmdW/Mfn5rdCdzAl0Dc72EBMVDtIr3TU0zl5Temts9z8lmQayMSQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpk7/wGFco/WBVb9tgAAAABJRU5ErkJggg==" alt="Logo principal">
+    <header id="header" style="text-align: center;">
+        <img class="animate__animated animate__lightSpeedInLeft" src="./imagenes/logo.png" alt="Logo principal">
+        <div class="navbar">
+            <a href="./index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+            <a class="active"href="./productos.html"><i class="fa fa-fw fa-search"></i>Productos</a>
+            <a href="./contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
+        </div>  
     </header>
-    <div class="navbar">
-        <a href="./index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
-        <a class="active" href="./productos.html"><i class="fa fa-fw fa-search"></i>Productos</a>
-        <a href="./contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
-    </div> 
+    
+    <div style="background-color: rgb(209, 198, 188);;">
+        <div class="contenedor-productos" id="contenedor-productos"></div>
+    </div>
+
+    <footer id="#info">
+        <p>Desarrollado por Lucas Rodriguez</p>
+        <p>github @lucasirod</p>
+    </footer> 
 </body>
+<script src="./js/datos.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </html>
